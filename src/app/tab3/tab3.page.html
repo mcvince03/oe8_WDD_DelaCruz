@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>Dollar to Peso</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+      <img src="assets\icon\Mcvince.png" />
+      <ion-card-header>
+          <ion-card-title>Dollar to Peso</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+          <div class="inputp">
+              <ion-item>
+                  <ion-label type="text" position="stacked">Enter Amount in Dollar ($)</ion-label>
+                  <ion-input [(ngModel)]="dollar" placeholder="₱ 00.00"></ion-input>
+              </ion-item>
+          </div>
+
+      </ion-card-content>
+      <div class="buttoncon">
+          <ion-button type="button" (click)="convert()">CONVERT</ion-button>
+
+          <div class="resultcon">
+              <br>
+              <ion-label>PHP (₱)</ion-label>
+              <ion-input type="text" [(ngModel)]="result1"></ion-input>
+          </div>
+      </div>
+
+
+
+  </ion-card>
+
+
+
+</ion-content>
